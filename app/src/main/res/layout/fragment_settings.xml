@@ -28,5 +28,16 @@
         app:layout_constraintTop_toBottomOf="@id/nr_country"
         app:show_chevron="true"
         app:title="@string/choose_language" />
+    <com.motionweb.halal.customview.NavigationRowView
+        android:id="@+id/nr_theme"
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8dp"
+        app:icon="@drawable/ic_language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nr_country"
+        app:show_chevron="true"
+        app:title="@string/theme" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

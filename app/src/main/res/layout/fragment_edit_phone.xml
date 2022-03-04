@@ -11,6 +11,7 @@
         android:layout_marginHorizontal="@dimen/size_16dp"
         android:layout_marginTop="@dimen/size_24dp"
         android:background="@null"
+        android:textColor="@color/colorPrimaryBlack"
         android:inputType="number"
         android:hint="@string/input_number"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,7 +22,7 @@
         android:layout_width="@dimen/size_0dp"
         android:layout_height="1dp"
         android:layout_marginTop="@dimen/size_8dp"
-        android:background="@color/main_blue"
+        android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="@id/et_edit"
         app:layout_constraintStart_toStartOf="@id/et_edit"
         app:layout_constraintTop_toBottomOf="@id/et_edit" />

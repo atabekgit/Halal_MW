@@ -7,7 +7,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/main_blue"
+        android:background="@color/colorPrimary"
         android:paddingHorizontal="@dimen/size_16dp"
         android:paddingBottom="@dimen/size_16dp">
 
@@ -16,7 +16,7 @@
             android:layout_width="@dimen/size_0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/size_80dp"
-            app:cardBackgroundColor="@color/main_blue"
+            app:cardBackgroundColor="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -69,7 +69,7 @@
             android:layout_width="@dimen/size_0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/size_30dp"
-            app:cardBackgroundColor="@color/main_blue"
+            app:cardBackgroundColor="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/mc_about"

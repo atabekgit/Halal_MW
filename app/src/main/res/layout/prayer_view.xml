@@ -93,7 +93,6 @@
             app:layout_constraintStart_toStartOf="@id/tv_prayer_top_text"
             app:layout_constraintTop_toBottomOf="@id/tv_prayer_top_text"
             tools:text="13:02" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

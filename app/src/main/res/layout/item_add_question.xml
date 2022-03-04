@@ -20,6 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minLines="7"
+        android:textColor="@color/black"
         android:hint="@string/tap_to_edit"
         android:padding="@dimen/padding_8dp"
         android:gravity="start"

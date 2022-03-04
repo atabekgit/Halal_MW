@@ -131,4 +131,6 @@
     <string name="could_not_determine_the_code">Код аныкталбай калды</string>
     <string name="ok">Макул</string>
     <string name="product_status_unknown">Продуктун статусу белгисиз</string>
+    <string name="theme">Теманы тандаңыз</string>
+
 </resources>

@@ -33,7 +33,7 @@
             android:layout_marginEnd="@dimen/radius_10dp"
             android:ellipsize="end"
             android:maxLines="2"
-            android:textColor="@color/black"
+            android:textColor="@color/colorTextWhite"
             android:textSize="@dimen/text_20sp"
             app:layout_constraintEnd_toStartOf="@id/cb_favourite"
             app:layout_constraintStart_toEndOf="@id/iv_logo"

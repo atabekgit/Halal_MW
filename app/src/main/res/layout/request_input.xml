@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/main_blue"
+    android:background="@color/colorPrimary"
     android:padding="@dimen/size_8dp">
 
     <TextView
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:background="@null"
         android:inputType="text"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorTextWhite"
         android:textSize="@dimen/text_16sp"
         app:layout_constraintEnd_toStartOf="@id/iv_edit"
         app:layout_constraintStart_toStartOf="parent"
