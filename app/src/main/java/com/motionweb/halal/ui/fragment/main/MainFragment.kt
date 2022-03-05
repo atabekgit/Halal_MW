@@ -1,8 +1,9 @@
 package com.motionweb.halal.ui.fragment.main
 
 
+import android.content.Intent
+import android.net.Uri
 import android.os.CountDownTimer
-import android.util.Log
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -15,6 +16,7 @@ import com.motionweb.halal.R
 import com.motionweb.halal.core.ui.fragment.CoreFragment
 import com.motionweb.halal.data.network.prayertime.PrayerTime
 import com.motionweb.halal.databinding.FragmentMainBinding
+import com.motionweb.halal.ui.fragment.main.adapter.BannerItemListener
 import com.motionweb.halal.ui.fragment.main.adapter.HalalBannerAdapter
 import com.motionweb.halal.utils.Keys
 import com.motionweb.halal.utils.prayerTime.PrayerTimeNames
@@ -119,6 +121,7 @@ class MainFragment : CoreFragment<FragmentMainBinding>() {
         times.add(3, format.parse(time.date.mergeDateWithTime(time.fourthTime))?.time)
         times.add(4, format.parse(time.date.mergeDateWithTime(time.fifthTime))?.time)
         times.add(5, format.parse(time.date.mergeDateWithTime(time.sixthTime))?.time)
+        times.add(6, format.parse(time.date.mergeDateWithTime(time.seventhTime)).time)
         return times
     }
 
@@ -141,6 +144,14 @@ class MainFragment : CoreFragment<FragmentMainBinding>() {
         vb.vpBanner.adapter = bannerAdapter
         vb.vpBanner.registerOnPageChangeCallback(onBannerPageChange())
         vb.vpBanner.setPageTransformer(ZoomOutPageTransformer())
+        bannerAdapter.setOnItemClickListener(object :BannerItemListener{
+            override fun bannerItemClick(position: Int) {
+                vm.allBanners.observe(this@MainFragment) {
+                   startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(it[position].url)))
+                }
+            }
+
+        })
     }
 
     private fun startBannerTimer() {
@@ -168,8 +179,10 @@ class MainFragment : CoreFragment<FragmentMainBinding>() {
     private fun showNextBanner() {
         val bannerCount = bannerAdapter.itemCount
         if (bannerCount != 0) {
+
             val nextIndex = (vb.vpBanner.currentItem + 1) % bannerCount
             vb.vpBanner.currentItem = nextIndex
+
         } else {
             shouldTimerRun()
         }
@@ -182,6 +195,17 @@ class MainFragment : CoreFragment<FragmentMainBinding>() {
                 positionOffset: Float,
                 positionOffsetPixels: Int
             ) {
+                if (position!=null){
+                    bannerAdapter.setOnItemClickListener(object :BannerItemListener{
+                        override fun bannerItemClick(position: Int) {
+                            vm.allBanners.observe(this@MainFragment) {
+                                startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(it[position].url)))
+                            }
+                        }
+
+                    })
+                }
+
                 super.onPageScrolled(position, positionOffset, positionOffsetPixels)
                 setCurrentOnBoardingIndicator(position)
             }

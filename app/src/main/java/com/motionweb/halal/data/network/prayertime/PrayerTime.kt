@@ -19,5 +19,9 @@ data class PrayerTime(
     @SerializedName("fifth_time")
     val fifthTime: String,
     @SerializedName("sixth_time")
-    val sixthTime: String
+    val sixthTime: String,
+
+    @SerializedName("seventh_time")
+    val seventhTime:String
+
 ) : Parcelable

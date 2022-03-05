@@ -18,6 +18,7 @@ class PrayerTimeNames private constructor() {
                 Names.FOURTH.ordinal -> context.getString(Names.FOURTH.prName)
                 Names.FIFTH.ordinal -> context.getString(Names.FIFTH.prName)
                 Names.SIX.ordinal -> context.getString(Names.SIX.prName)
+                Names.SEVENTH.ordinal -> context.getString(Names.SEVENTH.prName)
                 else -> null
             }
         }
@@ -27,6 +28,7 @@ class PrayerTimeNames private constructor() {
     enum class Names(@StringRes val prName: Int) : Parcelable {
         FIRST(R.string.first_prayer_name), SECOND(R.string.second_prayer_name),
         THIRD(R.string.third_prayer_name), FOURTH(R.string.fourth_prayer_name),
-        FIFTH(R.string.fifth_prayer_name), SIX(R.string.sixth_prayer_name)
+        FIFTH(R.string.fifth_prayer_name), SIX(R.string.sixth_prayer_name),
+        SEVENTH(R.string.seventh_name)
     }
 }
