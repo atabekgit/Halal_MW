@@ -14,10 +14,8 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class SettingsFragment : CoreFragment<FragmentSettingsBinding>() {
     private lateinit var dialog: Dialog
-
     override fun createVB(): FragmentSettingsBinding =
         FragmentSettingsBinding.inflate(layoutInflater)
-
     override fun setupViews() {
         super.setupViews()
         vb.nrCountry.setOnClickListener {
