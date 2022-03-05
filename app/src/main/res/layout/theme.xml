@@ -61,8 +61,4 @@
         android:text="ОК"
         android:textSize="@dimen/text_14sp"
         android:textColor="@color/colorTextWhite"/>
-
-
-
-
 </androidx.cardview.widget.CardView>

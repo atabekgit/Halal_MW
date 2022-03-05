@@ -8,5 +8,7 @@ data class Banner(
     @SerializedName("creation_date")
     val creationDate: String,
     @SerializedName("update_date")
-    val updatedDate: String
+    val updatedDate: String,
+    @SerializedName("url")
+    val url:String?=null
 )

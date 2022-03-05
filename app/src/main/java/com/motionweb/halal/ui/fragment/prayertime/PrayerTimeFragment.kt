@@ -41,9 +41,10 @@ class PrayerTimeFragment : CoreFragment<FragmentPrayerTimeBinding>() {
             tvFirstTime.text = removeLastSecondsFromTime(time?.prayerTime?.firstTime)
             tvSecondTime.text = removeLastSecondsFromTime(time?.prayerTime?.secondTime)
             tvThirdTime.text = removeLastSecondsFromTime(time?.prayerTime?.thirdTime)
-            tvFourthTime.text = removeLastSecondsFromTime(time?.prayerTime?.fifthTime)
+            tvFourthTime.text = removeLastSecondsFromTime(time?.prayerTime?.fourthTime)
             tvFifthTime.text = removeLastSecondsFromTime(time?.prayerTime?.fifthTime)
-            tvSixthTime.text = removeLastSecondsFromTime(time?.prayerTime?.sixthTime)
+            tvSixthTime.text = removeLastSecondsFromTime(time?.prayerTime?.seventhTime)
+            seventhTime.text=removeLastSecondsFromTime(time?.prayerTime?.sixthTime)
             setupTimeColor(time?.index)
         }
 
@@ -57,6 +58,7 @@ class PrayerTimeFragment : CoreFragment<FragmentPrayerTimeBinding>() {
             PrayerTimeNames.Names.FOURTH.ordinal -> setColor(vb.tvFourthName to vb.tvFourthTime)
             PrayerTimeNames.Names.FIFTH.ordinal -> setColor(vb.tvFifthName to vb.tvFifthTime)
             PrayerTimeNames.Names.SIX.ordinal -> setColor(vb.tvSixthName to vb.tvSixthTime)
+            PrayerTimeNames.Names.SEVENTH.ordinal ->setColor(vb.seventhName to vb.seventhTime)
             else -> return
         }
     }

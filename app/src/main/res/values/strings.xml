@@ -59,6 +59,7 @@
     <string name="fourth_prayer_name">Аср</string>
     <string name="fifth_prayer_name">Магриб</string>
     <string name="sixth_prayer_name">Иша</string>
+    <string name="seventh_prayer_name" translatable="false">Иша</string>
     <string name="choose_country">Выберите страну</string>
     <string name="choose_language">Выберите язык</string>
     <string name="theme">Выберите тема</string>
@@ -142,6 +143,8 @@
     <string name="product_status_unknown">Неизвестный статус товара</string>
     <string name="light">Светлая</string>
     <string name="dark">Тёмная</string>
+    <string name="seventh_name" translatable="false">Тахаджут</string>
+    <string name="seventh_time" translatable="false">2:32</string>
 
 
     <string-array name="months">
