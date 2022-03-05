@@ -132,5 +132,8 @@
     <string name="ok">Макул</string>
     <string name="product_status_unknown">Продуктун статусу белгисиз</string>
     <string name="theme">Теманы тандаңыз</string>
+    <string name="light">Жарык</string>
+    <string name="dark">Караңгы</string>
+
 
 </resources>

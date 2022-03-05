@@ -140,6 +140,9 @@
     <string name="could_not_determine_the_code">Не удалось определить код</string>
     <string name="ok">Хорошо</string>
     <string name="product_status_unknown">Неизвестный статус товара</string>
+    <string name="light">Светлая</string>
+    <string name="dark">Тёмная</string>
+
 
     <string-array name="months">
         <item>Январь</item>

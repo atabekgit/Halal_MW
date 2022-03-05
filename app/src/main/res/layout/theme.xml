@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/colorPrimary"
+    android:layout_height="240dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/theme"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="@dimen/padding_24dp"
+        android:fontFamily="@font/tthovesthin"
+        android:textStyle="normal"
+        android:layout_margin="25sp"/>
+
+    <RadioGroup
+        android:id="@+id/rb_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_70dp"
+        android:layout_marginStart="25sp">
+
+
+        <RadioButton
+            android:id="@+id/rb_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/light"
+            android:textSize="@dimen/size_20dp"
+            android:textColor="@color/colorTextWhite"
+            app:materialThemeOverlay="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/rb_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dark"
+            android:textSize="@dimen/size_20dp"
+            android:textColor="@color/colorTextWhite"
+            app:materialThemeOverlay="@style/RadioButtonStyle" />
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/tv_no"
+        android:layout_width="@dimen/size_80dp"
+        android:layout_height="@dimen/size_30dp"
+        android:text="ОТМЕНА"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="150dp"
+        android:textSize="@dimen/text_14sp"
+        android:textColor="@color/colorTextWhite"/>
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="@dimen/size_50dp"
+        android:layout_height="@dimen/size_30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="240dp"
+        android:text="ОК"
+        android:textSize="@dimen/text_14sp"
+        android:textColor="@color/colorTextWhite"/>
+
+
+
+
+</androidx.cardview.widget.CardView>
