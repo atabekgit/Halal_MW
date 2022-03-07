@@ -79,7 +79,7 @@ class CompaniesFragment : CoreFragment<FragmentCatalogBinding>(), ItemClickListe
     }
 
     override fun onItemClick(id: Long) {
-        findNavController().navigate(CompaniesFragmentDirections.toCompanyDetailFragment(id))
+        findNavController().navigate(CompaniesFragmentDirections.actionCompaniesFragmentToProductsFragment2(id,2))
     }
 
     override fun onFavouriteClick(id: Long, isFavourite: Boolean) {

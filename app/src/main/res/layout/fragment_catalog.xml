@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/refresher"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -40,6 +41,16 @@
             android:paddingStart="@dimen/size_8dp"
             android:paddingEnd="@dimen/size_8dp" />
 
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
         <androidx.recyclerview.widget.RecyclerView xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/rv"
             android:layout_width="match_parent"
@@ -61,7 +72,6 @@
             android:text="@string/empty_list"
             android:textSize="@dimen/text_32sp"
             android:visibility="gone" />
-
     </LinearLayout>
 
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

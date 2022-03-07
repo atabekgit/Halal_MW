@@ -31,6 +31,12 @@
         <argument
             android:name="categoryId"
             app:argType="long" />
+        <action
+            android:id="@+id/action_companiesFragment_to_productsFragment"
+            app:destination="@id/productsFragment" />
+        <action
+            android:id="@+id/action_companiesFragment_to_productsFragment2"
+            app:destination="@id/productsFragment" />
     </fragment>
 
     <fragment

@@ -1,6 +1,5 @@
 package com.motionweb.halal.ui.fragment.catalog.adapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.view.isVisible
@@ -16,15 +15,12 @@ import com.motionweb.halal.data.network.catalog.models.Product
 import com.motionweb.halal.databinding.ItemCatalogBinding
 import com.motionweb.halal.ui.activity.scanner.ScannerActivity
 import com.motionweb.halal.utils.toImageUrl
-import kotlin.math.log
 
 class CatalogAdapter(
     private val listener: ItemClickListener,
     private val appLang: ScannerActivity.AppLang? = null
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-
     private val differ = AsyncListDiffer(this, CatalogItemCallback())
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return CatalogVH.create(parent, listener, appLang)
     }
