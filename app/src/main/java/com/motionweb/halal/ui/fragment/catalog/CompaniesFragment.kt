@@ -132,7 +132,6 @@ class CompaniesFragment : CoreFragment<FragmentCatalogBinding>(), ItemClickListe
             }
         })
     }
-
     private fun setupPrayer() {
         vb.prayerView.setBottomText(getCurrentDate().toString())
         vb.prayerView.setPrayerTopText(vm.nearestPrayer)
