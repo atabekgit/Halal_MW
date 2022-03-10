@@ -63,7 +63,7 @@
     <string name="choose_country">Выберите страну</string>
     <string name="choose_language">Выберите язык</string>
     <string name="theme">Выберите тема</string>
-    <string name="halal_industry">Халал индустрия</string>
+    <string name="halal_industry">ОсОО «Центр развития халал индустрии»</string>
     <string name="licenses">Лицензии</string>
     <string name="event_title">Вы также можете добавить свои собственные объявления</string>
     <string name="event_manager">Нажмите, чтобы связываться с менеджером</string>
@@ -145,6 +145,7 @@
     <string name="dark">Тёмная</string>
     <string name="seventh_name" translatable="false">Тахаджут</string>
     <string name="seventh_time" translatable="false">2:32</string>
+    <string name="certification_halal">Международный орган по сертификации халал</string>
 
 
     <string-array name="months">

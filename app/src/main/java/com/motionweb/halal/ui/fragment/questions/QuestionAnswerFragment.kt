@@ -49,6 +49,7 @@ class QuestionAnswerFragment : CoreFragment<FragmentQuestionAnswerBinding>() {
                     }
                     .show()
             }
+            vb.etEdit.setText("")
         }
         vb.btnCancel.setOnClickListener {
             vb.etEdit.setText("")

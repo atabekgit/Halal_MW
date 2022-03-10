@@ -19,6 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:gravity="center"
             android:text="@string/halal_industry"
             android:textColor="@color/colorTextWhite"
             android:textSize="@dimen/text_24sp" />
@@ -45,17 +46,10 @@
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/size_16dp"
             android:fontFamily="@font/tthovesthin"
-            android:text="2021-2022 “Халал индустрия“"
+            android:textSize="@dimen/text_20sp"
+            android:gravity="center"
+            android:text="@string/certification_halal"
             android:textColor="@color/colorTextWhite" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/size_16dp"
-            android:text="@string/licenses"
-            android:textColor="@color/colorTextWhite"
-            android:textSize="18sp" />
 
     </LinearLayout>
 

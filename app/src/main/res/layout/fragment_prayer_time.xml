@@ -174,11 +174,9 @@
                 android:layout_width="@dimen/size_0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size_8dp"
-                android:layout_marginBottom="@dimen/size_24dp"
                 android:text="@string/sixth_prayer_name"
                 android:textColor="@color/colorTextWhite"
                 android:textSize="@dimen/text_20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/tv_fifth_name"
                 app:layout_constraintStart_toStartOf="@id/tv_fifth_name"
                 app:layout_constraintTop_toBottomOf="@id/tv_fifth_name"
@@ -197,6 +195,7 @@
               <TextView
                   android:id="@+id/seventh_time"
                   android:layout_width="wrap_content"
+                  android:paddingBottom="@dimen/radius_10dp"
                   android:layout_height="wrap_content"
                   app:layout_constraintTop_toBottomOf="@id/tv_sixth_time"
                   app:layout_constraintStart_toStartOf="@id/tv_sixth_time"
@@ -212,6 +211,7 @@
          app:layout_constraintStart_toStartOf="@id/tv_sixth_name"
          android:text="@string/seventh_name"
          android:textColor="@color/white"
+         android:paddingBottom="@dimen/radius_10dp"
          android:textSize="@dimen/text_20sp"
          android:layout_marginTop="@dimen/size_8dp"/>
         </androidx.constraintlayout.widget.ConstraintLayout>

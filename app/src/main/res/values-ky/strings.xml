@@ -17,9 +17,9 @@
     <string name="usa">Америка</string>
     <string name="africa">Африка</string>
     <string name="ru">Россия</string>
-    <string name="e_code">E кодтор</string>
-    <string name="favourite">"Тандалганда"</string>
-    <string name="requests">"Тиркемелер "</string>
+    <string name="e_code">E коддор</string>
+    <string name="favourite">"Тандалмалар"</string>
+    <string name="requests">"Арыз калтыруу"</string>
     <string name="questionable">Күмөн</string>
     <string name="haram">Харам</string>
     <string name="categories">Категориялар</string>
@@ -59,7 +59,7 @@
     <string name="sixth_prayer_name">Иша</string>
     <string name="choose_country">Сиздин өлкө тандоо</string>
     <string name="choose_language">Тилди тандаңыз</string>
-    <string name="halal_industry">Халал индустриясы</string>
+    <string name="halal_industry">ОсОО «Центр развития халал индустрии»</string>
     <string name="licenses">Лицензиялар</string>
     <string name="event_title">Сиз ошондой эле өз жарнамаларды кошо аласыз</string>
     <string name="event_manager">Менеджер менен байланышуу үчүн басыңыз</string>
